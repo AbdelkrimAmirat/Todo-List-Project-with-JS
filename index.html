@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- EXTERNAL LINKS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Lora:ital@1&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+       
+        
+    <!-- END OF EXERNAL LINKS-->
+</head>
+
+<style>
+
+    body{
+        background-color : rgb(30, 0 , 77);
+
+        .lora {
+            font-family: "Lora", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: italic;
+        }
+    }
+
+    .task{
+        display:flex;
+        background-color: white;
+        padding: 2px;
+        border-bottom: solid black 1px;
+        transition: box-shadow 0.2s;
+        font-family: "lora", serif;
+    }
+
+    .done{
+        background-color: rgb(158,253,160);
+    }
+
+    .task:hover {
+        box-shadow : 0px 3px 15px rgb(97, 97, 97, 0843);
+    }
+
+    .tasks-table {
+        background-color : rgb(239, 239, 239);
+        width: 60%;
+        /* height: 500px ; */
+        margin-top: 70px;
+        font-family: "lora", serif;
+    }
+
+    button{
+        border: none;
+        font-size: 10px;
+        box-shadow: 0px 3px 5px rgb(168,168,168, 0.38);
+    }
+
+    button.circular{
+        width: 30px;
+        height:30px;
+        border-radius: 50%;
+    }
+
+    .material-symbols-outlined {
+        font-family: 'Material Symbols Outlined';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+</style> 
+
+<body>
+    <div>
+        <!-- CENTER DIV -->
+        <div style ="display: flex; justify-content: center; align-items: center;">
+            <!-- TASTKS TABLE -->
+            <div class="tasks-table">
+                <!--HEADER -->
+                <div style ="width: 100%; text-align: center; background: rgb(92,52,155); color:white; padding-top: 8px; padding-bottom: 8px;">
+                    <h2 style ="display:inline">My Tasks</h2>
+                    <button id = "add-btn" class="circular" style="float: left; background: white; margin-left: 10px">
+                        <span class="material-symbols-outlined">
+                            add
+                        </span> 
+                    </button>
+                </div>
+                <!--HEADER END -->
+
+               <!--TASKS -->
+                <div id = "tasks" style="padding: 10px">
+                    <!--TASK -->
+                    <div class = "task">
+
+                        <!-- TASK INFO  -->
+                        <div style="width: 70%">
+                            <h3>Reading a Book</h3>
+                            <div>
+                                <span>
+                                    10/10/2025
+                                </span>
+                            </div>
+                        </div>
+                        <!-- TASK INFO END -->
+
+                        <!-- TASK ACTION -->
+                        <div style= "display: flex; justify-content: space-between; align-items: center; width: 20%">
+                            <button class="circular" style="background-color: rgb(114, 0 , 0); color: white">
+                                
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span> 
+                                
+                            </button>
+                            <button class="circular" style="background-color: rgb(0, 150 , 30); color: white">
+                                
+                                    C
+
+                            </button>
+                            <button class="circular" style="background-color: rgb(0, 16, 197, 0692); color: white">E</button>
+                        </div>
+                        <!-- TASK ACTION END -->
+                    </div>
+                     <!--TASK END -->
+
+                     <!--TASK -->
+                    <div class = "task">
+
+                        <!-- TASK INFO  -->
+                        <div style="width: 70%">
+                            <h3>Reading a Book</h3>
+                            <div>
+                                <span>
+                                    10/10/2025
+                                </span>
+                            </div>
+                        </div>
+                        <!-- TASK INFO END -->
+    
+                        <!-- TASK ACTION -->
+                        <div style= "display: flex; justify-content: space-between; align-items: center; width: 20%">
+                            <button class="circular" style="background-color: rgb(114, 0 , 0); color: white">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span> 
+                            </button>
+                            <button class="circular" style="background-color: rgb(0, 150 , 30); color: white">C</button>
+                            <button class="circular" style="background-color: rgb(0, 16, 197, 0692); color: white">E</button>
+                        </div>
+                        <!-- TASK ACTION END -->
+                    </div>
+                     <!--TASK END -->
+
+                     <!--TASK -->
+                    <div class = "task">
+
+                        <!-- TASK INFO  -->
+                        <div style="width: 70%">
+                            <h3>Reading a Book</h3>
+                            <div>
+                                <span>
+                                    10/10/2025
+                                </span>
+                            </div>
+                        </div>
+                        <!-- TASK INFO END -->
+
+                        <!-- TASK ACTION -->
+                        <div style= "display: flex; justify-content: space-between; align-items: center; width: 20%">
+                            <button class="circular" style="background-color: rgb(114, 0 , 0); color: white">
+                                <span class="material-symbols-outlined">
+                                    delete
+                                </span> 
+                            </button>
+                            <button class="circular" style="background-color: rgb(0, 150 , 30); color: white">C</button>
+                            <button class="circular" style="background-color: rgb(0, 16, 197, 0692); color: white">E</button>
+                        </div>
+                        <!-- TASK ACTION END -->
+                    </div>
+                    <!--TASK END -->
+                </div>  
+                <!--TASKS END -->
+
+            </div>
+            <!-- TASTKS TABLE END -->       
+        </div>
+        <!-- CENTER DIV END -->
+    </div>
+</body>
+
+<script>
+
+    let tasks= [
+        {
+            "title": "Lecture Livre CSS",
+            "date": "15/10/2024",
+            "isDone": true
+        },
+        {
+            "title": "Devloper un Pg HTML",
+            "date": "15/11/2025",
+            "isDone": false
+        },
+        {
+            "title": "Imprimer un Doc JS",
+            "date": "15/12/2026",
+            "isDone": true
+        },
+        {
+            "title": "Chat GPT Algéria",
+            "date": "15/12/2027",
+            "isDone": false
+        }
+    ]
+    function getTasksFromStorage(){
+        let retrieveTasks = JSON.parse(localStorage.getItem("tasks"))
+        tasks = retrieveTasks ?? []
+    }
+    
+    getTasksFromStorage()
+       
+    function fillNewTask(){
+        document.getElementById("tasks").innerHTML =""
+        let index = 0 
+        for (task of tasks) {
+
+            let content =
+                `
+                    <div class = "task ${task.isDone? 'done' : ''}">
+                        <!-- TASK INFO  -->
+                        <div style="width: 70%">
+                            <h3> ${task.title}</h3>
+                            <div>
+                                <span class="material-symbols-outlined">
+                                        calendar_month
+                                </span>
+                                <span>
+                                    ${task.date}
+                                </span>
+                            </div>
+                        </div>
+                        <!-- TASK INFO END -->
+
+                        <!-- TASK ACTION -->
+                        <div style= "display: flex; justify-content: space-between; align-items: center; width: 20%">
+                            <button onclick = "deleteTask(${index})" class="circular" style="background-color: rgb(114, 0 , 0); color: white">
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span> 
+                            </button>
+
+                            ${task.isDone ? `
+                                <button onclick = "switchTask(${index})" class="circular" style="background-color: rgb(118, 0 , 101); color: white">
+                                    <span class="material-symbols-outlined">
+                                        cancel
+                                    </span>  
+                                </button>
+                            `:`
+                                <button onclick = "switchTask(${index})" class="circular" style="background-color: rgb(0, 150 , 30); color: white">
+                                    <span class="material-symbols-outlined">
+                                        check
+                                    </span>    
+                                </button>
+                            `}
+                            <button onclick="editTask(${index})" class="circular" style="background-color: rgb(0, 16, 197, 0692); color: white">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>    
+                            </button>
+                        </div>
+                        <!-- TASK ACTION END -->
+                    </div> 
+                `
+                document.getElementById("tasks").innerHTML += content
+                index++
+        }
+
+    }
+
+    fillNewTask()
+    document.getElementById("add-btn").addEventListener("click", function(){
+        let taskName = prompt("Adding Task")
+        let now = new Date()
+        let date = now.getDate() + "/" + (now.getMonth() + 1) + "/" + now.getFullYear() + "  [" + now.getHours() + ":" + now.getMinutes() + "]"
+        let taskObj = {"title": taskName, 
+                       "date": date,
+                       "isDone": false
+        }
+        tasks.push(taskObj)
+        storeTasks()
+        fillNewTask()
+    })
+
+    function deleteTask(index){
+        let task = tasks[index]
+        let userResponse = confirm("Do you want to delete : " + task.title);
+        if (userResponse) {
+            tasks.splice(index, 1)
+            storeTasks()
+            fillNewTask()
+        } 
+    }
+
+    function editTask(index){
+        let task = tasks[index]
+        let newTaskTitle = prompt("Enter the new title of this task : ", task.title )
+        task.title = newTaskTitle
+        storeTasks() 
+        fillNewTask()
+    }
+
+    function switchTask(index){
+        let task = tasks[index]
+        task.isDone = !task.isDone
+        storeTasks()
+        fillNewTask()
+    }
+
+    //  ********  STORAGE FUNCTION   ********** //
+    function storeTasks(){
+        let tasksString = JSON.stringify(tasks)
+        localStorage.setItem("tasks", tasksString)
+    }
+
+</script>
+</html>
